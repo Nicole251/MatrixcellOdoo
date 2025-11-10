@@ -1,0 +1,24 @@
+// Función para mostrar una alerta al hacer clic en el botón del carrito
+function mostrarAlerta() {
+    alert("¡Simulación de Carrito! Por favor, inicia sesión para continuar la compra.");
+}
+
+// Lógica para simular "Añadir a Cesta"
+document.addEventListener('DOMContentLoaded', () => {
+    const botonesAdd = document.querySelectorAll('.add-btn');
+    const carritoBtn = document.querySelector('.carrito-btn');
+    let contadorCarrito = 0;
+
+    botonesAdd.forEach(boton => {
+        boton.addEventListener('click', (evento) => {
+            const nombreProducto = evento.target.dataset.nombre;
+            contadorCarrito++;
+            carritoBtn.textContent = `🛒 Carrito (${contadorCarrito})`;
+
+            console.log(`Producto añadido: ${nombreProducto}`);
+            
+            // Notificación al usuario
+            alert(`"${nombreProducto}" añadido a la cesta.`);
+        });
+    });
+});

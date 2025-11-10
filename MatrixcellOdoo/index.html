@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatrixCell - Tienda de Tecnología</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">MatrixCell</div>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Tienda</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <button class="carrito-btn" onclick="mostrarAlerta()">🛒 Carrito (0)</button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Conéctese con el futuro: ¡Teléfonos de última generación!</h1>
+            <p>Descubra nuestros modelos más populares y viva la innovación.</p>
+            <a href="#" class="btn-principal">Explorar Productos</a>
+        </section>
+
+        <section class="destacados">
+            <h2>🔥 Productos Destacados</h2>
+            <div class="productos-grid">
+                <div class="producto-card">
+                    <img src="https://via.placeholder.com/200x200?text=Smartphone+X" alt="Smartphone X">
+                    <h3>Smartphone Poderoso X</h3>
+                    <p class="precio">$599.99</p>
+                    <button class="add-btn" data-nombre="Smartphone X">Añadir a Cesta</button>
+                </div>
+                <div class="producto-card">
+                    <img src="https://via.placeholder.com/200x200?text=Accesorio+Pro" alt="Accesorio Pro">
+                    <h3>Cargador Rápido Pro</h3>
+                    <p class="precio">$49.99</p>
+                    <button class="add-btn" data-nombre="Cargador Pro">Añadir a Cesta</button>
+                </div>
+                <div class="producto-card">
+                    <img src="https://via.placeholder.com/200x200?text=Smart+9" alt="Smart 9">
+                    <h3>Smart 9 - Gran Batería</h3>
+                    <p class="precio">$199.99</p>
+                    <button class="add-btn" data-nombre="Smart 9">Añadir a Cesta</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © MatrixCell. Con tecnología de HTML/CSS/JS Estático.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
